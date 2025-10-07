@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Mona Sans;
+  src: url("./assets/Mona\ Sans.woff2");
+}
+
+@font-face {
+  font-family: Visual Sans;
+  src: url("./assets/Visual\ Sans\ Regular.woff2");
+}
+
+@font-face {
+  font-family: Visual Sans Semibold;
+  src: url("./assets/Visual\ Sans\ Semi\ Bold.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +26,7 @@ body {
 }
 
 body {
-  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  font-family: "Visual Sans", Gilroy, Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -19,6 +34,188 @@ main {
   width: 100%;
   padding: 20px;
 }
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-left svg {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Visual Sans", Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.nav-right i {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: "Visual Sans", Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+/* Hero Section */
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  gap: 5rem;
+  background-color: #fefefe;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  color: black;
+  font-family: Visual Sans Semibold, Gilroy, Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.hero-left p {
+  font-size: 16px;
+  font-family: Visual Sans, Gilroy, Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+}
+
+.hero-left .roles {
+  margin-top: 2rem;
+}
+
+.roles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.roles button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn svg {
+  height: 20px;
+  width: 20px;
+}
+
+.input-container {
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  height: 60px;
+  background: #f3f3f5;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.input-container svg {
+  display: inline;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  background: #ed4a89;
+  color: white;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+input:hover {
+  border: 1px solid pink;
+}
+
+.labels {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  background-color: transparent;
+  border: 1px solid #0d0c227b;
+  padding: 4px 16px;
+  font-size: 14px;
+  border-radius: 50px;
+  color: #0d0c22;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right video {
+  height: 500px;
+  width: 600px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+/* Cards Section */
 
 .cards {
   display: flex;
